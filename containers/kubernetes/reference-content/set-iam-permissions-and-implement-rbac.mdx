@@ -29,7 +29,7 @@ Key components of RBAC in Kubernetes include:
 - **Subjects:**  A subject in RBAC can be a user, a group, or a service account to which roles or cluster roles are bound.
 - **Rules:** Rules are sets of permissions associated with roles or cluster roles. They specify what actions are allowed or denied on specific resources.
 
-RBAC works seamlessly with Scaleway's IAM (Identity and Access Maanagement) system. Refer to [How to manage Kubeconfig files with IAM](/containers/kubernetes/how-to/manage-kubeconfig-with-iam/) for information how to configure IAM permissions for your users.
+RBAC works seamlessly with Scaleway's IAM (Identity and Access Maanagement) system. Refer to [How to manage Kubeconfig files with IAM](/containers/kubernetes/how-to/manage-kubeconfig-with-iam/) for information on how to configure IAM permissions for your users.
 
 ## Built-in IAM permission sets
 
@@ -162,4 +162,4 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-For more information how to use RBAC with your Kubernetes clusters, refer to the official [Kubernetes documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
+For more information on how to use RBAC with your Kubernetes clusters, refer to the official [Kubernetes documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
