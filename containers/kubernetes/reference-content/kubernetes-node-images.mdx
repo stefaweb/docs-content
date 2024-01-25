@@ -44,7 +44,7 @@ If your Kubernetes cluster runs version `<=1.29` we have implemented a hybrid ro
     - Replaced nodes transition to the new image system.
     - Any new node pool is deployed using the new node image
     - Nodes created through auto-scaling are deployed using the new system
-- Legacy nodes maintain the older system for retro compatibility
+- Legacy nodes maintain the older system for backward compatibility
     - Upgraded nodes follow the same approach, retaining the older system
 
 If your cluster is running Kubernetes `=>1.30` it will use the new compute image
