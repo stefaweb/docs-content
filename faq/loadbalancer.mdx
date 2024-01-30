@@ -32,10 +32,6 @@ flexible IPs are not compatible with other Scaleway products (e.g. Instances, El
 
 Each Load Balancer can have one public IPv4 address and one public IPv6 address. Currently, it is not possible to assign more than one of each type of IP to a given Load Balancer.
 
-</Concept>
-
-<Concept>
-
 ## Do Load Balancers support IPv6 addresses?
 
 Yes, IPv6 addresses are now supported for Scaleway Load Balancers at the frontend. Every [public](/network/load-balancer/concepts/#accessibility) Load Balancer must have an IPv4 address, but an IPv6 address can also be added. You add an IPv6 address either when you [create the Load Balancer](/network/load-balancer/how-to/create-load-balancer/), or by [creating a new flexible IPv6 address](/network/load-balancer/how-to/create-manage-flex-ips/) and then attaching it to an existing Load Balancer.
@@ -50,10 +46,6 @@ If you want to know more about the failover system, read [our article about stre
 ## Do backend servers require a public IP address?
 
 No, it is not required. You can use private Scaleway IPs on your backend servers if they are hosted in the same Availability Zone (AZ) as the Load Balancer.
-
-</Concept>
-
-<Concept>
 
 ## What is the difference between multicloud and non-multicloud offers?
 
