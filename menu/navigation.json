@@ -157,7 +157,7 @@
             "slug": "project"
           }
         ],
-        "label": "Console",
+        "label": "Account & Billing",
         "slug": "console"
       },
       {
@@ -599,6 +599,14 @@
                   {
                     "label": "Fixing the user configuration of cloud-init on Debian 12",
                     "slug": "fix-cloud-init-debian12"
+                  },
+                  {
+                    "label": "Fixing lost IPv6 connectivity on Debian Buster when migrating to routed IP",
+                    "slug": "fix-lost-ip-connectivity-on-debian-buster"
+                  },
+                  {
+                    "label": "Fixing DNS resolution with a routed IPv6-only setup on Debian Bullseye",
+                    "slug": "fix-dns-routed-ipv6-only-debian-bullseye"
                   },
                   {
                     "label": "Fixing unreachable IPv6 on RHEL based Instances after transition to routed ip",
@@ -1127,7 +1135,7 @@
                     "slug": "local-testing"
                   },
                   {
-                    "label": "Functions use-cases",
+                    "label": "Functions use cases",
                     "slug": "use-cases"
                   },
                   {
@@ -1261,7 +1269,7 @@
                     "slug": "deploy-container"
                   },
                   {
-                    "label": "Containers use-cases",
+                    "label": "Containers use cases",
                     "slug": "use-cases"
                   },
                   {
@@ -1315,6 +1323,10 @@
                   {
                     "label": "Create and manage queues",
                     "slug": "create-manage-queues"
+                  },
+                  {
+                    "label": "Create and manage topics",
+                    "slug": "create-manage-topics"
                   },
                   {
                     "label": "Monitor Messaging and Queuing with Cockpit",
@@ -1596,6 +1608,10 @@
                   {
                     "label": "Use the NVIDIA GPU operator on Kapsule and Kosmos with GPU Instances",
                     "slug": "use-nvidia-gpu-operator"
+                  },
+                  {
+                    "label": "Use the scratch storage on H100 GPU Instances with Kapsule",
+                    "slug": "use-scratch-storage-h100"
                   },
                   {
                     "label": "Delete a cluster",
@@ -2435,7 +2451,7 @@
                     "slug": "private-dns-dhcp-not-working"
                   },
                   {
-                    "label": "Autoconfiguration is not working",
+                    "label": "Auto-configuration is not working",
                     "slug": "autoconfig-not-working"
                   }
                 ],

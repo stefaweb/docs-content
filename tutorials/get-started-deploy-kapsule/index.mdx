@@ -7,7 +7,7 @@ content:
   paragraph: This is the second in a series of tutorials accompanying our video demonstrations on getting started with Kubernetes. Part 2 shows how to deploy a containerized application with Scaleway Kubernetes Kapsule.
 tags: Kubernetes k8s managed-kubernetes nodes pods pools kapsule image-pull-secret nodeport kubectl
 categories:
-  - compute
+  - kubernetes
 dates:
   validation: 2023-09-25
   posted: 2022-05-05
@@ -134,13 +134,13 @@ Now that we have created our cluster, connected to it with `kubectl` and defined
     Be sure to replace `rg.fr-par.scw.cloud/videodemo/whoami:latest` with the relevant path to where your `whoami` image is stored in your container registry.
 
     <Message type="tip">
-      To better understand the different parts of the deployment yaml, here is some further information:
+      To better understand the different parts of the deployment YAML, here is some further information:
         - **apiVersion** specifies which version of the Kubernetes API to use to create the object
-        - **kind** specifies the kind of object defined in this yaml file, here a deployment. Other Kubernetes objects we can define in yaml files include pods, Secrets, Namespaces and more.
+        - **kind** specifies the kind of object defined in this YAML file, here a deployment. Other Kubernetes objects we can define in YAML files include pods, Secrets, Namespaces and more.
         - **metadata** helps uniquely identify our deployment object: we give it a name and a label.
         - **spec shows** the desired state for the deployment (2 replicas) and the **selector** field defines how the Deployment finds which pods to manage, in this case using our predefined label
         - **template** labels the pods with that same label, and tells them which container to run, and where to find the image for it. It also gives the pull secret needed for access.
-      As this is a very basic yaml file for a Kubernetes deployment, you could reuse the code and adapt it for other simple deployments by changing the registry and image information.
+      As this is a very basic YAML file for a Kubernetes deployment, you could reuse the code and adapt it for other simple deployments by changing the registry and image information.
     </Message>
 3. Run the following command to deploy the deployment on the cluster:
     ```
@@ -204,7 +204,7 @@ You should see that the `whoami` application is printing the ID of the container
 - [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)
 - [Official Kubernetes documentation](https://kubernetes.io/docs/home/)
 
-<Navigation title="See Also">
+<Navigation title="See also">
   <PreviousButton to="/tutorials/get-started-containers-docker/">Getting started with Kubernetes Part 1 - Containers & Docker</PreviousButton>
   <NextButton to="/tutorials/get-started-kubernetes-loadbalancer/">Getting started with Kubernetes Part 3 - Load Balancers</NextButton>
 </Navigation>
