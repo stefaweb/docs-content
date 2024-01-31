@@ -71,7 +71,7 @@ Scaleway provides [Block Storage](/storage/block/quickstart/) as its StorageClas
 Scaleway has upgraded the Block Storage used by our StorageClass, offering better performance. Our previous class was `scw-bssd`, which has now been replaced by `sbs-default`, giving you faster read/write operations with lower latency.
 </Message>
 
-Cloud providers also provide a **C**ontainer **S**torage **I**nterface (CSI) for their managed clusters. This is a standardized interface allowing communication between Kubernetes and the cloud provider's own storage products. CSI and StorageClasses make **dynamic volume provisioning** possible, whereby Kubernetes Kapsule users can create storage volumes for their clusters on-demand. They simply describe the storage required by referring to a StorageClass, and this is provisioned from Scaleway by the CSI.
+Cloud providers also provide a **C**ontainer **S**torage **I**nterface (CSI) for their managed clusters. This is a standardized interface allowing communication between Kubernetes and the cloud provider's own storage products. CSI and StorageClasses make **dynamic volume provisioning** possible, whereby Kubernetes Kapsule users can create storage volumes for their clusters on-demand. They simply describe the storage required by referring to a StorageClass, and this is provisioned from Scaleway by the [CSI](https://github.com/scaleway/scaleway-csi).
 
 ### Kubernetes objects
 
